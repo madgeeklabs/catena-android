@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.VolleyError;
@@ -56,6 +57,14 @@ public class DeviceActivity extends RoboActivity implements ResponseListener, Ch
     private String clientToken;
     @InjectView(R.id.register)
     Button requestAccess;
+    @InjectView(R.id.item_description)
+    TextView description;
+    @InjectView(R.id.item_price) TextView price;
+    private boolean onUse;
+    @InjectView(R.id.btn_start) Button paymentOrOff;
+    private String decodedChallenge;
+    private static final String USER = "goofyahead";
+
     Key publicKey = null;
     Key privateKey = null;
     private String keyToSend;
@@ -67,6 +76,8 @@ public class DeviceActivity extends RoboActivity implements ResponseListener, Ch
 
         currentDevice = (Device) getIntent().getExtras().getSerializable("DEVICE");
 
+        description.setText(currentDevice.getName());
+        price.setText("$" + currentDevice.getCost() + ".00 per use");
         CustomSSL.nuke();
 
         getToken();
@@ -93,7 +104,7 @@ public class DeviceActivity extends RoboActivity implements ResponseListener, Ch
             @Override
             public void onClick(View view) {
                 // Generate key pair for 1024-bit RSA encryption and decryption
-                api.sendKey(keyToSend, "goofyahead", 4000, DeviceActivity.this);
+                api.sendKey(keyToSend, USER, 4000, DeviceActivity.this);
             }
         });
     }
@@ -165,8 +176,9 @@ public class DeviceActivity extends RoboActivity implements ResponseListener, Ch
     @Override
     public void onChallenge(String challenge) {
         byte[] challengeArray = Base64.decode(challenge, Base64.DEFAULT);
-        api.useDevice(decode(challengeArray), "goofyahead");
-        Log.d(TAG, "challenge that came from server is " + decode(challengeArray));
+        decodedChallenge = decode(challengeArray);
+        api.useDevice(decodedChallenge, USER);
+        Log.d(TAG, "challenge that came from server is " + decodedChallenge);
     }
 
     @Override
@@ -180,18 +192,23 @@ public class DeviceActivity extends RoboActivity implements ResponseListener, Ch
     }
 
     public void onStartClick(View view) {
-        Customization customization = new Customization.CustomizationBuilder()
-                .primaryDescription("Awesome payment")
-                .secondaryDescription("Using the Client SDK")
-                .amount("$" + currentDevice.getCost() + ".00")
-                .submitButtonText("Pay")
-                .build();
+        if (onUse) {
+            paymentOrOff.setText("Pay for use");
+            api.offDevice(decodedChallenge, USER);
+        }else {
+            Customization customization = new Customization.CustomizationBuilder()
+                    .primaryDescription("Awesome payment")
+                    .secondaryDescription("Using the Client SDK")
+                    .amount("$" + currentDevice.getCost() + ".00")
+                    .submitButtonText("Pay")
+                    .build();
 
-        Intent intent = new Intent(this, BraintreePaymentActivity.class);
-        intent.putExtra(BraintreePaymentActivity.EXTRA_CUSTOMIZATION, customization);
-        intent.putExtra(BraintreePaymentActivity.EXTRA_CLIENT_TOKEN, clientToken);
+            Intent intent = new Intent(this, BraintreePaymentActivity.class);
+            intent.putExtra(BraintreePaymentActivity.EXTRA_CUSTOMIZATION, customization);
+            intent.putExtra(BraintreePaymentActivity.EXTRA_CLIENT_TOKEN, clientToken);
 
-        startActivityForResult(intent, REQUEST_CODE);
+            startActivityForResult(intent, REQUEST_CODE);
+        }
     }
 
     @Override
@@ -199,7 +216,11 @@ public class DeviceActivity extends RoboActivity implements ResponseListener, Ch
         if (resultCode == BraintreePaymentActivity.RESULT_OK) {
             String paymentMethodNonce = data.getStringExtra(BraintreePaymentActivity.EXTRA_PAYMENT_METHOD_NONCE);
 
-            api.getChallenge("goofyahead", this);
+            api.getChallenge(USER, this);
+
+            onUse = true;
+
+            paymentOrOff.setText("Turn OFF");
 
             RequestParams requestParams = new RequestParams();
             requestParams.put("payment_method_nonce", paymentMethodNonce);

@@ -82,12 +82,28 @@
       <file leaf-file-name="DeviceActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/es/goofyahead/mykeys/activities/DeviceActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1617" max-vertical-offset="2685">
-              <caret line="167" column="57" selection-start-line="167" selection-start-column="57" selection-end-line="167" selection-end-column="57" />
+            <state vertical-scroll-proportion="-3.8076923" vertical-offset="2646" max-vertical-offset="3675">
+              <caret line="183" column="13" selection-start-line="183" selection-start-column="13" selection-end-line="183" selection-end-column="13" />
               <folding>
-                <element signature="e#3053#3333#0" expanded="true" />
-                <element signature="e#3322#3323#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#3494#3766#0" expanded="true" />
+                <element signature="e#3755#3756#0" expanded="true" />
+                <element signature="e#8206#8509#0" expanded="true" />
+                <element signature="e#8493#8494#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="285">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,14 +144,13 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.88889" vertical-offset="0" max-vertical-offset="705">
-              <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+            <state vertical-scroll-proportion="-13.333333" vertical-offset="225" max-vertical-offset="900">
+              <caret line="39" column="32" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="32" />
               <folding>
                 <element signature="e#264#299#0" expanded="true" />
                 <element signature="e#325#360#0" expanded="true" />
                 <element signature="e#384#417#0" expanded="true" />
                 <element signature="e#444#477#0" expanded="true" />
-                <element signature="e#802#823#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,19 +159,23 @@
       <file leaf-file-name="Api.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/es/goofyahead/mykeys/volley/Api.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7746479" vertical-offset="765" max-vertical-offset="1455">
-              <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.33333334" vertical-offset="1077" max-vertical-offset="1725">
+              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
               <folding>
-                <element signature="e#1258#1481#0" expanded="true" />
-                <element signature="e#1470#1471#0" expanded="true" />
-                <element signature="e#2781#3047#0" expanded="true" />
-                <element signature="e#3036#3037#0" expanded="true" />
-                <element signature="e#3049#3272#0" expanded="true" />
-                <element signature="e#3261#3262#0" expanded="true" />
-                <element signature="e#3497#3715#0" expanded="true" />
-                <element signature="e#3704#3705#0" expanded="true" />
-                <element signature="e#3717#3940#0" expanded="true" />
-                <element signature="e#3929#3930#0" expanded="true" />
+                <element signature="e#1319#1542#0" expanded="true" />
+                <element signature="e#1531#1532#0" expanded="true" />
+                <element signature="e#2842#3108#0" expanded="true" />
+                <element signature="e#3097#3098#0" expanded="true" />
+                <element signature="e#3110#3333#0" expanded="true" />
+                <element signature="e#3322#3323#0" expanded="true" />
+                <element signature="e#3558#3776#0" expanded="true" />
+                <element signature="e#3765#3766#0" expanded="true" />
+                <element signature="e#3778#4001#0" expanded="true" />
+                <element signature="e#3990#3991#0" expanded="true" />
+                <element signature="e#4227#4445#0" expanded="true" />
+                <element signature="e#4434#4435#0" expanded="true" />
+                <element signature="e#4447#4670#0" expanded="true" />
+                <element signature="e#4659#4660#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -168,25 +187,6 @@
             <state vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="315">
               <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Device.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/es/goofyahead/mykeys/models/Device.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-              <folding>
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
-                <element signature="e#492#493#0" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#561#562#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -911,10 +911,10 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/device_item_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/goofyahead/mykeys/adapters/DevicesAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/goofyahead/mykeys/models/Device.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_device.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/goofyahead/mykeys/activities/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/es/goofyahead/mykeys/volley/Api.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_device.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/goofyahead/mykeys/activities/DeviceActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/goofyahead/mykeys/volley/Api.java" />
       </list>
     </option>
   </component>
@@ -1564,7 +1564,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1090" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1581,7 +1581,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.56582916" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32964823" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32964823" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1672,17 +1672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/device_item_layout.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -1743,23 +1732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_device.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.88889" vertical-offset="0" max-vertical-offset="705">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding>
-            <element signature="e#264#299#0" expanded="true" />
-            <element signature="e#325#360#0" expanded="true" />
-            <element signature="e#384#417#0" expanded="true" />
-            <element signature="e#444#477#0" expanded="true" />
-            <element signature="e#802#823#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/es/goofyahead/mykeys/activities/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1485">
@@ -1788,32 +1760,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_device.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.333333" vertical-offset="225" max-vertical-offset="900">
+          <caret line="39" column="32" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="32" />
+          <folding>
+            <element signature="e#264#299#0" expanded="true" />
+            <element signature="e#325#360#0" expanded="true" />
+            <element signature="e#384#417#0" expanded="true" />
+            <element signature="e#444#477#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/es/goofyahead/mykeys/activities/DeviceActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1617" max-vertical-offset="2685">
-          <caret line="167" column="57" selection-start-line="167" selection-start-column="57" selection-end-line="167" selection-end-column="57" />
+        <state vertical-scroll-proportion="-3.8076923" vertical-offset="2646" max-vertical-offset="3675">
+          <caret line="183" column="13" selection-start-line="183" selection-start-column="13" selection-end-line="183" selection-end-column="13" />
           <folding>
-            <element signature="e#3053#3333#0" expanded="true" />
-            <element signature="e#3322#3323#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3494#3766#0" expanded="true" />
+            <element signature="e#3755#3756#0" expanded="true" />
+            <element signature="e#8206#8509#0" expanded="true" />
+            <element signature="e#8493#8494#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/es/goofyahead/mykeys/volley/Api.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7746479" vertical-offset="765" max-vertical-offset="1455">
-          <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="1077" max-vertical-offset="1725">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding>
-            <element signature="e#1258#1481#0" expanded="true" />
-            <element signature="e#1470#1471#0" expanded="true" />
-            <element signature="e#2781#3047#0" expanded="true" />
-            <element signature="e#3036#3037#0" expanded="true" />
-            <element signature="e#3049#3272#0" expanded="true" />
-            <element signature="e#3261#3262#0" expanded="true" />
-            <element signature="e#3497#3715#0" expanded="true" />
-            <element signature="e#3704#3705#0" expanded="true" />
-            <element signature="e#3717#3940#0" expanded="true" />
-            <element signature="e#3929#3930#0" expanded="true" />
+            <element signature="e#1319#1542#0" expanded="true" />
+            <element signature="e#1531#1532#0" expanded="true" />
+            <element signature="e#2842#3108#0" expanded="true" />
+            <element signature="e#3097#3098#0" expanded="true" />
+            <element signature="e#3110#3333#0" expanded="true" />
+            <element signature="e#3322#3323#0" expanded="true" />
+            <element signature="e#3558#3776#0" expanded="true" />
+            <element signature="e#3765#3766#0" expanded="true" />
+            <element signature="e#3778#4001#0" expanded="true" />
+            <element signature="e#3990#3991#0" expanded="true" />
+            <element signature="e#4227#4445#0" expanded="true" />
+            <element signature="e#4434#4435#0" expanded="true" />
+            <element signature="e#4447#4670#0" expanded="true" />
+            <element signature="e#4659#4660#0" expanded="true" />
           </folding>
         </state>
       </provider>
