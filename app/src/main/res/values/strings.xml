@@ -7,5 +7,5 @@
     <string name="title_activity_device">DeviceActivity</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="title_activity_maps">Map</string>
-
+    <string name="google_maps_key" templateMergeStrategy="preserve">AIzaSyAtQdz_vxxoFLf97WaAmKG-z-SOWEHvI5M</string>
 </resources>
