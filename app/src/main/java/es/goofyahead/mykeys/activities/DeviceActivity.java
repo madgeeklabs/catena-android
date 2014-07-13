@@ -13,6 +13,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.ImageLoader;
+import com.android.volley.toolbox.NetworkImageView;
 import com.braintreepayments.api.dropin.BraintreePaymentActivity;
 import com.braintreepayments.api.dropin.Customization;
 import com.google.common.base.Joiner;
@@ -63,6 +65,10 @@ public class DeviceActivity extends RoboActivity implements ResponseListener, Ch
     private boolean onUse;
     @InjectView(R.id.btn_start) Button paymentOrOff;
     private String decodedChallenge;
+    @InjectView(R.id.detail_item_image)
+    NetworkImageView image;
+    @Inject
+    ImageLoader loader;
     private static final String USER = "goofyahead";
 
     Key publicKey = null;
@@ -78,6 +84,7 @@ public class DeviceActivity extends RoboActivity implements ResponseListener, Ch
 
         description.setText(currentDevice.getName());
         price.setText("$" + currentDevice.getCost() + ".00 per use");
+        image.setImageUrl(currentDevice.getImageUrl(), loader);
         CustomSSL.nuke();
 
         getToken();
@@ -217,7 +224,7 @@ public class DeviceActivity extends RoboActivity implements ResponseListener, Ch
             String paymentMethodNonce = data.getStringExtra(BraintreePaymentActivity.EXTRA_PAYMENT_METHOD_NONCE);
 
             api.getChallenge(USER, this);
-
+            api.sendTransaction(currentDevice.getCost());
             onUse = true;
 
             paymentOrOff.setText("Turn OFF");

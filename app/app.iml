@@ -62,16 +62,19 @@
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="android-async-http-1.4.4" level="project" />
-    <orderEntry type="library" exported="" name="roboguice-2.0" level="project" />
-    <orderEntry type="library" exported="" name="braintree-1.0.0" level="project" />
-    <orderEntry type="library" exported="" name="guice-3.0-no_aop" level="project" />
     <orderEntry type="library" exported="" name="gson-2.2.4" level="project" />
-    <orderEntry type="library" exported="" name="guava-17.0" level="project" />
+    <orderEntry type="library" exported="" name="appcompat-v7-19.1.0" level="project" />
     <orderEntry type="library" exported="" name="okhttp-1.6.0" level="project" />
+    <orderEntry type="library" exported="" name="support-v4-19.1.0" level="project" />
     <orderEntry type="library" exported="" name="braintree-api-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="bcprov-jdk15on-150" level="project" />
+    <orderEntry type="library" exported="" name="play-services-4.2.42" level="project" />
+    <orderEntry type="library" exported="" name="roboguice-2.0" level="project" />
+    <orderEntry type="library" exported="" name="guice-3.0-no_aop" level="project" />
+    <orderEntry type="library" exported="" name="braintree-1.0.0" level="project" />
+    <orderEntry type="library" exported="" name="guava-17.0" level="project" />
     <orderEntry type="library" exported="" name="javax.inject-1" level="project" />
     <orderEntry type="library" exported="" name="data-1.0.0" level="project" />
-    <orderEntry type="library" exported="" name="bcprov-jdk15on-150" level="project" />
     <orderEntry type="library" exported="" name="volley" level="project" />
   </component>
 </module>

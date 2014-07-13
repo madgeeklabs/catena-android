@@ -2,13 +2,16 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:background="@android:color/transparent"
     android:layout_height="match_parent">
 
-    <ImageView
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/item_image"
+        android:layout_margin="10dp"
         android:layout_width="150dp"
         android:layout_height="200dp"
-        android:id="@+id/imageView"
-        android:src="@drawable/kettle" />
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY" />
 
     <LinearLayout
         android:orientation="vertical"

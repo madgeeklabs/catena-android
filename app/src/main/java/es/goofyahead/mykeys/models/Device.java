@@ -9,10 +9,20 @@ public class Device implements Serializable{
 
     private String name;
     private int cost;
+    private String imageUrl;
 
-    public Device (String name, int cost) {
+    public Device (String name, int cost, String imageUrl) {
         this.name = name;
         this.cost = cost;
+        this.imageUrl = imageUrl;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public String getName() {

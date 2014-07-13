@@ -103,6 +103,8 @@ public class MainActivity extends RoboActivity implements ResponseListener {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_settings) {
+            Intent maps = new Intent(MainActivity.this, MapsActivity.class);
+            startActivity(maps);
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -117,7 +119,7 @@ public class MainActivity extends RoboActivity implements ResponseListener {
             for (int x = 0; x < devices.length(); x++) {
                 JSONObject device = devices.getJSONObject(x);
 
-                Device current = new Device(device.getString("name"), device.getInt("price"));
+                Device current = new Device(device.getString("name"), device.getInt("price"), device.getString("image"));
                 devicesList.add(current);
             }
         } catch (JSONException e) {
