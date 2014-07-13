@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -38,6 +39,7 @@ import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 
 import es.goofyahead.mykeys.R;
+import es.goofyahead.mykeys.custom.NetWorkImageViewCircle;
 import es.goofyahead.mykeys.interfaces.ChallengeListener;
 import es.goofyahead.mykeys.interfaces.ResponseListener;
 import es.goofyahead.mykeys.models.Device;
@@ -69,7 +71,13 @@ public class DeviceActivity extends RoboActivity implements ResponseListener, Ch
     NetworkImageView image;
     @Inject
     ImageLoader loader;
+    @InjectView(R.id.user_avatar)
+    NetWorkImageViewCircle avatarImg;
+    @InjectView(R.id.ratingBar)
+    RatingBar rating;
+
     private static final String USER = "goofyahead";
+    private static final String AVATAR = "http://gravatar.com/avatar/cd351ae83b3a49c828bc6b4b5320844e";
 
     Key publicKey = null;
     Key privateKey = null;
@@ -85,6 +93,8 @@ public class DeviceActivity extends RoboActivity implements ResponseListener, Ch
         description.setText(currentDevice.getName());
         price.setText("$" + currentDevice.getCost() + ".00 per use");
         image.setImageUrl(currentDevice.getImageUrl(), loader);
+        avatarImg.setImageUrl(currentDevice.getGravatar(), loader);
+        rating.setRating(3.5f);
         CustomSSL.nuke();
 
         getToken();

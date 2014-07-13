@@ -14,6 +14,7 @@ import com.google.inject.Inject;
 import java.util.ArrayList;
 
 import es.goofyahead.mykeys.R;
+import es.goofyahead.mykeys.custom.NetWorkImageViewCircle;
 import es.goofyahead.mykeys.models.Device;
 import roboguice.RoboGuice;
 import roboguice.inject.RoboInjector;
@@ -61,19 +62,22 @@ public class DevicesAdapter extends BaseAdapter{
             holder.name = (TextView) convertView.findViewById(R.id.name);
             holder.price = (TextView) convertView.findViewById(R.id.price);
             holder.image = (NetworkImageView) convertView.findViewById(R.id.item_image);
+            holder.userImage = (NetWorkImageViewCircle) convertView.findViewById(R.id.user_avatar);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
 
         holder.name.setText(current.getName());
-        holder.price.setText("" + current.getCost());
+        holder.price.setText("Cost per use: " + current.getCost() + ".00 €");
         holder.image.setImageUrl(current.getImageUrl(), loader);
+        holder.userImage.setImageUrl(current.getGravatar(), loader);
         return convertView;
     }
 
     private class ViewHolder {
         private NetworkImageView image;
+        private NetWorkImageViewCircle userImage;
         private TextView name;
         private TextView price;
     }

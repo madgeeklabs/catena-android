@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import es.goofyahead.mykeys.R;
 
 public class SplashActivity extends Activity {
-    private static final long SPLASH_DISPLAY_LENGHT = 1000;
+    private static final long SPLASH_DISPLAY_LENGHT = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

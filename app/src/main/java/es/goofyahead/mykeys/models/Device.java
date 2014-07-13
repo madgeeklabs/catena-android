@@ -10,11 +10,21 @@ public class Device implements Serializable{
     private String name;
     private int cost;
     private String imageUrl;
+    private String gravatar;
 
-    public Device (String name, int cost, String imageUrl) {
+    public Device (String name, int cost, String imageUrl, String gravatar) {
         this.name = name;
         this.cost = cost;
         this.imageUrl = imageUrl;
+        this.gravatar = gravatar;
+    }
+
+    public String getGravatar() {
+        return gravatar;
+    }
+
+    public void setGravatar(String gravatar) {
+        this.gravatar = gravatar;
     }
 
     public String getImageUrl() {

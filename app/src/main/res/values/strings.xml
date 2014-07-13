@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Mykeys</string>
+    <string name="app_name">Katena</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_device">DeviceActivity</string>
-    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_device">Katena</string>
+    <string name="title_activity_splash">Katena</string>
     <string name="title_activity_maps">Map</string>
     <string name="google_maps_key" templateMergeStrategy="preserve">AIzaSyAtQdz_vxxoFLf97WaAmKG-z-SOWEHvI5M</string>
 </resources>

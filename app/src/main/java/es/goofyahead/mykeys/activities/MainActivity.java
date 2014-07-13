@@ -119,7 +119,7 @@ public class MainActivity extends RoboActivity implements ResponseListener {
             for (int x = 0; x < devices.length(); x++) {
                 JSONObject device = devices.getJSONObject(x);
 
-                Device current = new Device(device.getString("name"), device.getInt("price"), device.getString("image"));
+                Device current = new Device(device.getString("name"), device.getInt("price"), device.getString("image"), device.getString("gravatar"));
                 devicesList.add(current);
             }
         } catch (JSONException e) {
